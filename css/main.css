@@ -1,0 +1,1706 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	font-family: 'Verdana';
+	color:;
+}
+
+a{text-decoration:none;}
+ul{list-style:none;}
+div{display:block;}
+
+
+.screen{
+	width:100%;
+	min-width:1200px;
+	min-height:100px;
+	background-color:rgba(255,255,255,0);
+	margin:0 auto;
+}
+
+.content{
+	width:1200px;
+	margin:0 auto;
+}
+
+#fixed_menu{
+	transition:0.2s;
+	-webkit-transition:0.2s;
+	-moz-transition:0.2s;
+	-o-transition:0.2s;	
+	width:100%;
+	min-width:1200px;
+	position:fixed;
+	z-index:99;
+	background-color:black;
+}
+
+.hide{top:-80px;}
+.show{top:0px;}
+/*======================================= ВСЕ КНОПКИ ===================================================*/
+.button_site,.button_site2{
+	transition:0.2s;
+	-webkit-transition:0.2s;
+	-moz-transition:0.2s;
+	-o-transition:0.2s;	
+	font-family: 'Conv_FuturaNewBook_0';
+	font-size:10px;
+	cursor:pointer;
+	background-color:#f1dc9a;
+	color:black;
+	border:none;
+	letter-spacing:1px;
+}
+
+.button_site:hover{background-color:#d8c487;}
+.button_site:active{background-color:#ffeaa1;}
+.button_site2:hover{background-color:#d8c487;}
+.button_site2:active{background-color:#ffeaa1;}
+.button_site2{font-size:18px!important;}
+.button1{width:140px;height:24px;float:right;}
+
+/*======================================= ВИДЕОХЕДЕР ===================================================*/
+
+#video_header {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: #000;
+    overflow: hidden;
+}
+
+#video_header_screen {
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+#video {
+    background-size: auto 100%;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+}
+
+.logo{float:left;}
+
+.navigation {
+    width: 1200px;
+    height: 80px;
+    position: relative;
+    margin: 0 auto;
+    z-index: 3;
+}
+
+.navigation ul{
+	position:relative;left:50px; top:15px;
+	display:block;
+}
+
+.navigation ul li{
+	float:left;
+	font-family: 'Conv_FuturaNewBook_0';
+	font-size:12px;
+	margin-right:22px;
+	letter-spacing:2px;
+}
+
+.navigation ul li a{color:white;}
+.navigation ul li a:hover{color:#f1dc9a;}
+
+.call{
+	width:335px;
+	height:24px;
+	float:right;
+	position:relative;left:-20px;top:25px;
+}
+
+.call span{color:white;font-family: 'Conv_GaramondPremrPro';font-size:25px;line-height:1;}
+
+#video_header_content {
+    text-align: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: nowrap;
+    -webkit-flex-flow: nowrap;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+
+.for-navigation {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.82);
+}
+
+.menu-false {
+    width: 100%;
+    height: 80px;
+    background: #fff;
+}
+
+.general-center{
+}
+
+.block-bottom{
+}
+
+.block-19{
+}
+
+/*beginning block-19 svg*/
+
+
+.block-19 {
+    /*width: 630px;*/
+    margin: 0px auto;
+}
+
+.block-19__svg__path{
+    fill: none;
+    stroke: #AEA793;
+    stroke-width: 1px;
+    transition: 3s ease 0s;
+    /* stroke-linejoin: round; */
+    /* stroke-opacity: 0.90; */
+}
+
+.block-19.active .block-19__svg__path{
+    stroke-dashoffset: 0px;
+}
+
+.block-19__svg__path--1{
+    stroke-dasharray: 441px;
+    stroke-dashoffset: 441px;
+}
+
+.block-19__svg__path--2{
+    stroke-dasharray: 318px;
+    stroke-dashoffset: 318px;
+}
+
+.block-19__svg__path--3{
+    stroke-dasharray: 153px;
+    stroke-dashoffset: 153px;
+}
+
+.block-19__svg__path--4{
+    stroke-dasharray: 180px;
+    stroke-dashoffset: 180px;
+}
+
+.block-19__svg__path--5{
+    stroke-dasharray: 27px;
+    stroke-dashoffset: 27px;
+}
+
+.block-19__svg__path--6{
+    stroke-dasharray: 279px;
+    stroke-dashoffset: 279px;
+}
+
+.block-19__svg__path--7{
+    stroke-dasharray: 239px;
+    stroke-dashoffset: 239px;
+}
+
+.block-19__svg__path--8{
+    stroke-dasharray: 154px;
+    stroke-dashoffset: 154px;
+}
+
+.block-19__svg__path--9{
+    stroke-dasharray: 100px;
+    stroke-dashoffset: 100px;
+}
+
+.block-19__svg__path--10{
+    stroke-dasharray: 175px;
+    stroke-dashoffset: 175px;
+}
+
+.block-19__svg__path--11 {
+    stroke-dasharray: 38px;
+    stroke-dashoffset: 38px;
+}
+
+.block-19__svg__path--12{
+    stroke-dasharray: 208px;
+    stroke-dashoffset: 208px;
+}
+
+.block-19__svg__path--13{
+    stroke-dasharray: 192px;
+    stroke-dashoffset: 192px;
+}
+
+.block-19__svg__path--14{
+    stroke-dasharray: 190px;
+    stroke-dashoffset: 190px;
+}
+
+.block-19__svg__path--15{
+    stroke-dasharray: 36px;
+    stroke-dashoffset: 36px;
+}
+
+.block-19__svg__path--16{
+    stroke-dasharray: 946px;
+    stroke-dashoffset: 946px;
+}
+
+.block-19__svg__path--17{
+    stroke-dasharray: 253px;
+    stroke-dashoffset: 253px;
+}
+
+.block-19__svg__path--18{
+    stroke-dasharray: 409px;
+    stroke-dashoffset: 409px;
+}
+
+.block-19__svg__path--19{
+    stroke-dasharray: 419px;
+    stroke-dashoffset: 419px;
+}
+
+.block-19__svg__path--20{
+    stroke-dasharray: 63px;
+    stroke-dashoffset: 63px;
+}
+
+.block-19__svg__path--21{
+    stroke-dasharray: 471px;
+    stroke-dashoffset: 471px;
+}
+
+.block-19__svg__path--22{
+    stroke-dasharray: 398px;
+    stroke-dashoffset: 398px;
+}
+
+.block-19__svg__path--23{
+    stroke-dasharray: 890px;
+    stroke-dashoffset: 890px;
+}
+
+.block-19__svg__path--24{
+    stroke-dasharray: 190px;
+    stroke-dashoffset: 190px;
+}
+
+.block-19__svg__path--25{
+    stroke-dasharray: 223px;
+    stroke-dashoffset: 223px;
+}
+
+.block-19__svg__path--26{
+    stroke-dasharray: 380px;
+    stroke-dashoffset: 380px;
+}
+
+.block-19__svg__path--27{
+    stroke-dasharray: 170px;
+    stroke-dashoffset: 170px;
+}
+
+.block-19__svg__path--28{
+    stroke-dasharray: 220px;
+    stroke-dashoffset: 220px;
+}
+
+.block-19__svg__path--29{
+    stroke-dasharray: 200px;
+    stroke-dashoffset: 200px;
+}
+
+.block-19__svg__path--30{
+    stroke-dasharray: 180px;
+    stroke-dashoffset: 180px;
+}
+
+.block-19__svg__path--31{
+    stroke-dasharray: 200px;
+    stroke-dashoffset: 200px;
+}
+
+.block-19__svg__path--32{
+    stroke-dasharray: 230px;
+    stroke-dashoffset: 230px;
+}
+
+.block-19__svg__path--33{
+    stroke-dasharray: 270px;
+    stroke-dashoffset: 270px;
+}
+
+.block-19__svg__path--34{
+    stroke-dasharray: 340px;
+    stroke-dashoffset: 340px;
+}
+
+.block-19__svg__path--35{
+    stroke-dasharray: 150px;
+    stroke-dashoffset: 150px;
+}
+
+.block-19__svg__path--36{
+    stroke-dasharray: 260px;
+    stroke-dashoffset: 260px;
+}
+
+.block-19__svg__path--37{
+    stroke-dasharray: 180px;
+    stroke-dashoffset: 180px;
+}
+
+.block-19__svg__path--38{
+    stroke-dasharray: 155px;
+    stroke-dashoffset: 155px;
+}
+
+.block-19__svg__path--39{
+    stroke-dasharray: 90px;
+    stroke-dashoffset: 90px;
+}
+
+.block-19__svg__path--40{
+    stroke-dasharray: 140px;
+    stroke-dashoffset: 140px;
+}
+
+.block-19__svg__path--41{
+    stroke-dasharray: 37px;
+    stroke-dashoffset: 37px;
+}
+
+.block-19__svg__path--42{
+    stroke-dasharray: 39px;
+    stroke-dashoffset: 39px;
+}
+
+.block-19__svg__path--43{
+    stroke-dasharray: 363px;
+    stroke-dashoffset: 363px;
+}
+
+.block-19__svg__path--44{
+    stroke-dasharray: 29px;
+    stroke-dashoffset: 29px;
+}
+
+.block-19__svg__path--45{
+    stroke-dasharray: 35px;
+    stroke-dashoffset: 35px;
+}
+
+.block-19__svg__path--46{
+    stroke-dasharray: 13px;
+    stroke-dashoffset: 13px;
+}
+
+.block-19__svg__path--47{
+    stroke-dasharray: 40px;
+    stroke-dashoffset: 40px;
+}
+
+.block-19__svg__path--48{
+    stroke-dasharray: 132px;
+    stroke-dashoffset: 132px;
+}
+
+.block-19__svg__path--49{
+    stroke-dasharray: 132px;
+    stroke-dashoffset: 132px;
+}
+
+.block-19__svg__path--50{
+    stroke-dasharray: 26px;
+    stroke-dashoffset: 26px;
+}
+
+.block-19__svg__path--51{
+    stroke-dasharray: 29px;
+    stroke-dashoffset: 29px;
+}
+
+.block-19__svg__path--52{
+    stroke-dasharray: 81px;
+    stroke-dashoffset: 81px;
+}
+
+.block-19__svg__path--53{
+    stroke-dasharray: 17px;
+    stroke-dashoffset: 17px;
+}
+
+.block-19__svg__path--54{
+    stroke-dasharray: 13px;
+    stroke-dashoffset: 13px;
+}
+
+.block-19__svg__path--55{
+    stroke-dasharray: 12px;
+    stroke-dashoffset: 12px;
+}
+
+.block-19__svg__path--56{
+    stroke-dasharray: 45px;
+    stroke-dashoffset: 45px;
+}
+
+.block-19__svg__path--57{
+    stroke-dasharray: 155px;
+    stroke-dashoffset: 155px;
+}
+
+.block-19__svg__path--58{
+    stroke-dasharray: 32px;
+    stroke-dashoffset: 32px;
+}
+
+.block-19__svg__path--59{
+    stroke-dasharray: 67px;
+    stroke-dashoffset: 67px;
+}
+
+.block-19__svg__path--60{
+    stroke-dasharray: 32px;
+    stroke-dashoffset: 32px;
+}
+
+.block-19__svg__path--61{
+    stroke-dasharray: 17px;
+    stroke-dashoffset: 17px;
+}
+
+.block-19__svg__path--62{
+    stroke-dasharray: 14px;
+    stroke-dashoffset: 14px;
+}
+
+.block-19__svg__path--63{
+    stroke-dasharray: 14px;
+    stroke-dashoffset: 14px;
+}
+
+.block-19__svg__path--64{
+    stroke-dasharray: 51px;
+    stroke-dashoffset: 51px;
+}
+
+.block-19__svg__path--65{
+    stroke-dasharray: 40px;
+    stroke-dashoffset: 40px;
+}
+
+.block-19__svg__path--66{
+    stroke-dasharray: 0px;
+    stroke-dashoffset: 0px;
+}
+
+.block-19__svg__path--67{
+    stroke-dasharray: 18px;
+    stroke-dashoffset: 18px;
+}
+
+.block-19__svg__path--68{
+    stroke-dasharray: 76px;
+    stroke-dashoffset: 76px;
+}
+
+.block-19__svg__path--69{
+    stroke-dasharray: 17px;
+    stroke-dashoffset: 17px;
+}
+/*end block-19 svg*/
+
+
+#piano {
+    display: block;
+    margin: 0px auto;
+}
+
+.yallou_hr {
+    background-color: #f2dc9a;
+    width: 85px;
+    height: 1px;
+    margin: 38px auto;
+}
+
+.title{
+	font-family: 'Conv_GaramondPremrPro';
+	font-size:50px;
+	letter-spacing:10px;
+	line-height:1.1;
+	display:block;
+	margin-top:10px;
+}
+
+.pod_title{
+	font-family: 'Conv_FuturaNewLight_ostrokonechnaya_L';
+	font-size:18px;
+	letter-spacing:4px;
+	line-height:1.2;
+	display:block;
+	margin-top:10px;
+}
+
+.white{color:white;}
+.black{color:black;}
+/*======================================= КАТАЛОГ ===================================================*/
+
+#screen1{
+	background-color:white;
+	height:1480px;
+}
+#content_id1{height:1480px;}
+
+.title_box{
+	width:1200px;
+	text-align:center;
+	padding-top:50px;
+}
+
+#select{
+	width:1200px;
+	height:50px;
+	margin-top:20px;
+}
+
+#select ul li{float:left;}
+
+.select_button{
+	transition:0.2s;
+	-webkit-transition:0.2s;
+	-moz-transition:0.2s;
+	-o-transition:0.2s;	
+	width:280px;
+	height:50px;
+	border:1px solid black;
+	cursor:pointer;
+	margin:0px 10px;
+	display:block;
+	font-family: 'Conv_FuturaNewBook_0';
+	font-size:20px;
+}
+
+.sb_black{
+	background-color:black;
+	color:white;
+}
+
+.sb_white{
+	background-color:white;
+	color:black;
+}
+
+.sb_white:hover{
+	background-color:black;color:white;
+}
+
+#catalog_box{
+	width:1200px;
+	height:1220px;
+	margin-top:20px;
+}
+
+#catalog_left{
+	width:280px;
+	height:1220px;
+	margin-left:10px;
+	float:left;
+}
+
+#catalog_right{
+	width:900px;
+	height:1220px;
+	float:right;
+}
+
+#products{display:table;width:900px;}
+
+.image_submit{
+	width:278px;
+	height:278px;
+	border:1px solid #cdcdcd;
+	float:left;
+	margin-left:10px;
+	margin-right:10px;
+	margin-bottom:20px;
+	cursor:pointer;
+}
+
+.image_submit:hover{border:1px solid #efc235;}
+
+#navig_box{width:900px;height:30px;}
+
+.navig{
+	width:30px;
+	height:30px;
+	border:1px solid #cdcdcd;
+	color:#cdcdcd;
+	cursor:pointer;
+	background-color:white;
+	float:left;
+	margin-left:10px;
+}
+
+.navig:hover{border:1px solid #f0c335;color:#f0c335;}
+
+#catalog_left ul li{
+	padding:8px 0px;
+}
+
+.catalog_hr{
+	background-color:#e5e5e5;
+	border:none;width:100%;height:1px;
+}
+
+.label1{font-family: 'Conv_FuturaNewLight_ostrokonechnaya_L'; font-size:17px;cursor:pointer;position:relative;top:-2px;}
+
+input[type=checkbox] {
+	display: none;
+}
+
+.label1:before {
+	content:url(../img/chackbox2.png);
+	margin-right:10px;
+	position:relative;top:4px;
+}
+
+input[type=checkbox]:checked + .label1:before {
+	content:url(../img/chackbox.png);
+	margin-right:10px;
+	position:relative;top:4px;	
+}
+
+.left_brend,.right_brend,#brd11{
+	display:block;
+	margin-bottom:10px;
+	cursor:pointer;
+	height:70px;
+}
+
+.left_brend{width:138px;float:left;}
+.right_brend{width:131px;float:right;}
+#brd11{width:278px;height:70px;}
+
+#brd1{background: rgba(0,0,0,0) url(../img/brend1.jpg)no-repeat center center;}
+#brd2{background: rgba(0,0,0,0) url(../img/brend10.jpg)no-repeat center center;}
+#brd3{background: rgba(0,0,0,0) url(../img/brend11.jpg)no-repeat center center;}
+#brd4{background: rgba(0,0,0,0) url(../img/brend2.jpg)no-repeat center center;}
+#brd5{background: rgba(0,0,0,0) url(../img/brend3.jpg)no-repeat center center;}
+#brd6{background: rgba(0,0,0,0) url(../img/brend4.jpg)no-repeat center center;}
+#brd7{background: rgba(0,0,0,0) url(../img/brend5.jpg)no-repeat center center;}
+#brd8{background: rgba(0,0,0,0) url(../img/brend6.jpg)no-repeat center center;}
+#brd9{background: rgba(0,0,0,0) url(../img/brend7.jpg)no-repeat center center;}
+#brd10{background: rgba(0,0,0,0) url(../img/brend8.jpg)no-repeat center center;}
+#brd11{background: rgba(0,0,0,0) url(../img/brend9.jpg)no-repeat center center;}
+
+.no_activ{border:1px solid #cdcdcd;}
+.no_activ:hover{border:1px solid #efc235;}
+.activ{border:1px solid #efc235;}
+
+#akciya{
+	width:278px;
+	height:256px;
+	border:1px solid #cccccc;
+	margin-top:75px;
+}
+
+#akciya:hover{
+	border:1px solid #e3c145;
+}
+
+#akciya_center{
+	width:114px;
+	height:324px;
+	background:url(../img/akciya.jpg)no-repeat center top;
+	margin:0 auto;
+	text-align:center;
+	font-family: 'Conv_FuturaNewBook_0';
+	font-size:25px;
+	letter-spacing:2px;
+	margin-top:-45px;
+}
+
+#akciya_center span{margin-top:286px;display:inline-block;color:black;}
+.akcionniy{
+	position:absolute;
+	margin-left:30px;
+	margin-top:30px;
+}
+
+.block{display:block;}
+.none{display:none;}
+
+#oll_brends{
+	width:100%;
+	display:table;
+}
+
+.galka{
+	width:15px;
+	height:15px;
+	float:right;
+	margin-top:51px;
+	margin-right:4px;
+	background:url(../img/brend_select.png)no-repeat center center;
+}
+
+/*======================================= БЕЗУПРЕЧНОЕ ЗВУЧАНИЕ ===================================================*/
+
+#screen2{
+	background:white url(../img/bg2.jpg)no-repeat center top;
+	height:1065px;
+}
+#content_id2{height:1065px;}
+
+#s2_left{
+	width:610px;
+	height:880px;
+	float:left;
+	text-align:center;
+	margin-top:80px;
+}
+
+#s2_right{
+	width:500px;
+	height:450px;
+	float:right;
+	margin-right:10px;
+	margin-top:280px;
+}
+
+#kamerton{
+	position:absolute;
+	width:138px;
+	height:874px;
+	margin-left:236px;
+	background:url(../img/kamerton.png)no-repeat center center;
+}
+
+.s2_title{
+	font-family: 'Conv_GaramondPremrPro';
+	font-size:63px;
+	text-shadow:2px 8px 8px rgba(0,0,0,1); 
+	display:block;
+	margin-top:340px;
+	letter-spacing:10px;
+	position:relative;
+}
+
+.s2_title2{
+	font-family: 'Conv_FuturaNewLight_ostrokonechnaya_L';
+	font-size:30px;
+	letter-spacing:2px;
+}
+
+.for_ear{position:relative;top:13px;}
+
+/*======================================= МЕЛОДИЯ ТЕХНОЛОГИЙ ===================================================*/
+
+#screen3{
+	background-color:white;
+	height:595px;
+}
+#content_id3{height:595px;}
+
+#divace{
+	width:700px;
+	height:700px;
+	background:url(../img/bg4.jpg)no-repeat center center;
+	position:absolute;
+	margin-left:500px;
+	margin-top:-90px;
+}
+
+#s3_text{
+	width:620px;
+	height:730px;
+	margin-left:80px;
+	margin-top:-100px;
+	position:absolute;
+}
+
+#s3_text1,#s3_text2,#s3_text3{
+	width:450px;
+	height:150px;
+}
+
+#s3_text2{margin-left:100px;}
+#s3_text3{margin-left:200px;}
+
+.s3_head{
+	font-family: 'Conv_GaramondPremrPro';
+	font-size:24px;
+	letter-spacing:2px;
+	line-height:1;
+}
+
+.s3_body{
+	font-family: 'Conv_FuturaNewBook_0';
+	font-size:18px;
+	color:#4c4c4c;
+	display:block;
+	margin:5px 0px;
+}
+
+.s3_popup{
+	font-family: 'Conv_FuturaNewLight_ostrokonechnaya_L';
+	font-size:14px;
+	color:#b8a148;
+	background:none;
+	border:none;
+	border-bottom:1px dashed #b8a148;
+	cursor:pointer;
+	letter-spacing:1px;
+}
+.s3_popup:hover{color:#ddb310;}
+
+/*======================================= ИДЕАЛЬНЫЙ СЕРВИС ===================================================*/
+
+#screen4{
+	background:white url(../img/bg3.jpg)no-repeat center top;
+	height:980px;
+}
+#content_id4{height:980px;}
+
+#s4_content{
+	width:580px;
+	height:470px;
+	position:relative;
+	top:220px;
+	margin-left:10px;
+}
+
+#s4_content ul{
+	font-family: 'Conv_FuturaNewBook_0';
+	font-size:16px;
+	color:#9b9b9b;
+	margin-left:46px;
+}
+#s4_content ul li{margin-bottom:10px;}
+
+#s4_li1{list-style-image:url(../img/s41.png);position:relative;top:0px; }
+#s4_li2{list-style-image:url(../img/s42.png);position:relative;top:8px; }
+#s4_li3{list-style-image:url(../img/s43.png);position:relative;top:0px; }
+#s4_li4{list-style-image:url(../img/s44.png);position:relative;top:-5px; }
+#s4_li5{list-style-image:url(../img/s45.png);position:relative;top:-17px; }
+
+#s4_sp1{position:relative;top:-5px; left:10px;}
+#s4_sp2{position:relative;top:-17px; left:10px;}
+#s4_sp3{position:relative;top:-17px;left:10px; }
+#s4_sp4{position:relative;top:-17px; left:10px;}
+#s4_sp5{position:relative;top:-8px; left:10px;}
+
+/*======================================= ВСТРЕЧА В САЛОНЕ PIANOS ===================================================*/
+
+#screen5{
+	background-color:white;
+	height:330px;
+}
+#content_id5{height:330px;}
+
+#s5_left{
+	width:600px;
+	height:570px;
+	margin-left:10px;
+	position:absolute;
+	display:inline-block;
+	margin-top:-170px;
+}
+
+#s5_right{
+	width:500px;
+	height:420px;
+	float:right;
+	margin-right:10px;
+	margin-top:-35px;
+	position:relative;
+	display:inline-block;
+}
+#s5_title{line-height:1;}
+#s5_podtitle{
+	display:block;
+	margin-top:10px;
+	margin-bottom:60px;
+	letter-spacing:2px;
+	line-height:1;
+}
+
+#s5_title{
+	width:100%;
+	height:130px;
+	text-align:center;
+}
+
+#s5_video{
+	width:560px;
+	height:390px;
+	padding:13px;
+	border:7px solid #000;
+	background:url(../img/s5_video.jpg)no-repeat center center;
+	cursor:pointer;
+}
+
+#play{
+	display:block;
+	opacity:0.8;
+}
+
+#play:hover{
+	opacity:1;
+}
+
+/*======================================= ПРИОБРЕТИТЕ СВОЙ ИДЕАЛЬНЫЙ ИНСТРУМЕНТ ===================================================*/
+
+#screen6{
+	background:white url(../img/bg5.jpg)no-repeat center top;
+	height:990px;
+}
+#content_id6{height:990px;}
+
+#s6_title{
+	width:480px;
+	height:110px;
+	margin-left:10px;
+	position:absolute;
+	margin-top:220px;
+}
+
+#s6_content{
+	width:1180px;
+	height:128px;
+	margin-left:10px;
+	position:absolute;
+	margin-top:415px;
+}
+
+.s6_box{
+	width:260px;
+	height:110px;
+	float:left;
+	position:relative;
+}
+
+#s6b1{top:0px;}
+#s6b2{top:17px;margin-left:40px;}
+#s6b3{top:17px;margin-left:40px;}
+#s6b4{top:17px;margin-left:40px;}
+
+.s6_popup{
+	font-family: 'Conv_FuturaNewLight_ostrokonechnaya_L';
+	font-size:14px;
+	color:#ebdb9c;
+	border-bottom:1px dashed #ebdb9c;
+	letter-spacing:1px;
+	cursor:pointer;
+	line-height:0.9;
+}
+.s6_popup:hover{color:#cbbc80;border-bottom:1px dashed #cbbc80;}
+
+.s6_text{
+	font-family: 'Conv_FuturaNewLight_ostrokonechnaya_L';
+	font-size:18px;
+	color:#979492;
+	letter-spacing:1px;
+}
+
+/*======================================= АРЕНДА ИНСТРУМЕНТОВ ===================================================*/
+
+#screen7{
+	background-color:white;
+	height:240px;
+}
+#content_id7{height:240px;}
+
+#s7_content{
+	width:600px;
+	height:540px;
+	margin-left:10px;
+	position:absolute;
+	margin-top:-200px;
+}
+
+#s7_piano{
+	width:400px;
+	height:748px;
+	position:absolut;
+	margin-left:690px;
+	margin-top:-400px;
+}
+
+#s7_txt {position:relative;top:-20px;}
+
+#s7_txt span{
+	font-family: 'Conv_FuturaNewBook_0';
+	font-size:20px;
+}
+
+#s7_txt ul{
+	margin-left:31px;
+	margin-top:20px;
+}
+
+#s7_txt li{
+	float:left;
+	margin-right:70px;
+}
+
+#s7_txt li span{
+	font-family: 'Conv_FuturaNewLight_ostrokonechnaya_L';
+	font-size:20px;
+	position:relative;top:-6px;
+}
+
+#s7_li1{list-style-image:url(../img/s71.png);}
+#s7_li2{list-style-image:url(../img/s72.png);}
+#s7_li3{list-style-image:url(../img/s73.png);}
+
+#s7_button{
+	width:500px;
+	height:50px;
+	margin-top:60px;
+	letter-spacing:3px;
+}
+
+.s7_txt2{
+	font-family: 'Conv_FuturaNewLight_ostrokonechnaya_L';
+	font-size:16px!important;
+	color:#7f7f7f;
+}
+
+/*======================================= ПОПУЛЯРИЗАЦИЯ ЖИВОЙ МУЗЫКИ ===================================================*/
+
+#screen8{
+	background:white url(../img/bg6.jpg)no-repeat center top;
+	height:1096px;
+}
+#content_id8{height:1096px;}
+
+#s8_title{position:absolut;margin-top:200px;display:inline-block;margin-left:10px;}
+
+#slider{
+	width:1200px;
+	height:340px;
+	position:absolut;
+	margin-top:0px;
+}
+#arrow_left,#arrow_right{
+	width:30px;
+	height:30px;
+	cursor:pointer;
+	margin-top:155px;	
+}
+#arrow_left{float:left;background:url(../img/left_arrow.jpg)no-repeat -30px top;}
+#arrow_right{float:right;background:url(../img/right_arrow.jpg)no-repeat -30px top;}
+#arrow_left:hover{background:url(../img/left_arrow.jpg)no-repeat 0px top;}
+#arrow_right:hover{background:url(../img/right_arrow.jpg)no-repeat 0px top;}
+
+#slider_box{
+	width:1078px;
+	height:340px;
+	margin-left:31px;
+	float:left;
+	overflow:hidden;
+}
+
+#slider_content{
+	transition:0.4s;
+	-webkit-transition:0.4s;
+	-moz-transition:0.4s;
+	-o-transition:0.4s;	
+	width:10000px;
+	height:340px;
+	position:relative;
+	left:0px;
+}
+
+.slide{
+	display:block;
+	float:left;
+	margin-right:30px;
+}
+
+#test{color:white;}
+
+/*======================================= ПРЕССА О НАС ===================================================*/
+
+#screen9{
+	background:none;
+	height:960px;
+	margin-top:-200px;
+}
+#content_id9{
+	width:1180px!important;
+	padding:0px 10px;
+	height:960px;
+}
+
+#s9_brends{
+	width:1180px;
+	height:132px;
+	background:url(../img/brends.jpg)no-repeat center top;
+	margin-top:40px;
+}
+
+.s9_list{
+	width:1180px;
+	height:146px;
+	margin-top:10px;
+	display:table;
+}
+#s9_list{position:relative;top:-20px;}
+.s9_left,.s9_right{
+	width:580px;
+	min-height:146px;
+	margin-bottom:55px;
+	display:inline-block;
+}
+
+.s9_left{float:left;}
+.s9_right{float:right;}
+
+.s9_image{
+	width:148px;
+	height:148px;
+	display:block;
+	float:left;
+	border:1px solid #ecdca0;
+}
+
+.s9_text{
+	width:415px;
+	min-height:148px;
+	float:right;
+}
+
+.s9_title{
+	font-family: 'Conv_GaramondPremrPro';
+	font-size:24px;
+	color:#0f0805;
+	line-height:0.9;
+}
+
+.s9_txt{
+	font-family: 'Conv_FuturaNewLight_ostrokonechnaya_L';
+	font-size:18px;
+	color:#7f7f7f;
+	letter-spacing:1px;
+	line-height:0.9;
+	display:block;
+	margin-top:10px;
+}
+
+#txt9_1{margin-bottom:18px;}
+#txt9_2{margin-bottom:50px;}
+#txt9_3{margin-bottom:13px;}
+#txt9_4{margin-bottom:34px;}
+
+/*======================================= КОНТАКТЫ ===================================================*/
+
+#screen10{
+	background-color:white;
+	height:555px;
+}
+
+#map{
+	width:100%;
+	min-width:1200px;
+	height:555px;
+	margin:0 auto;
+	position:absolute;	
+}
+
+#contacts{
+	width:50%;
+	min-width:600px;
+	height:555px;
+	position:relative;
+	display:block;
+	float:right;
+	z-index:8;
+	background-color:rgba(0,0,0,0.7);
+}
+
+#s10_content{
+	width:400px;
+	height:470px;
+	margin-left:100px;
+	margin-top:60px;
+}
+
+.s10_txt{
+	font-family: 'Conv_FuturaNewLight_ostrokonechnaya_L';
+	font-size:18px;
+	line-height:1.1;
+}
+
+.contact_hr{
+	width:277px;
+	height:1px;
+	border:none;
+	background-color:#ebdb9c;
+	margin:15px 0px;
+}
+
+.phones{
+	font-family: 'Conv_FuturaNewLight_ostrokonechnaya_L';
+	font-size:24px;
+	line-height:1.1;
+}
+
+#s10_button{
+	width:380px;
+	height:50px;
+	margin:20px 0px;
+}
+
+.yallow{color:#ebdb9c!important;}
+
+#facebook,#instagram{
+	width:30px;
+	height:30px;
+	margin-right:10px;
+	float:left;
+}
+
+#facebook{background:url(../img/social.png)no-repeat 0px top;}
+#instagram{background:url(../img/social.png)no-repeat -60px top;}
+#facebook:hover{background:url(../img/social.png)no-repeat -30px top;}
+#instagram:hover{background:url(../img/social.png)no-repeat -90px top;}
+
+#social{
+	margin-top:8px;
+}
+
+/*======================================================== FOOTER ==========================================================================*/
+#screen11{height:100px;background-color:#white;}
+#content_id11{height:100px;}
+
+#f_left{
+	width:260px;
+	height:70px;
+	float:left;
+	text-align:center;
+	margin-top:30px;
+}
+
+#f_center{
+	width:276px;
+	height:20px;
+	float:left;
+	text-align:center;
+	margin-left:210px;
+	margin-top:35px;
+}
+
+#f_right{
+	width:290px;
+	height:50px;
+	float:right;
+	margin-top:25px;
+}
+
+#f_center a{
+   font-family: 'proxima_nova_rgregular';
+	font-size:20px;
+	text-decoration:none;
+	color:black;
+	line-height:1;
+		border-bottom:2px dashed #212121;
+}
+
+#mokselle{
+position:absolute;
+margin-left:134px;
+}
+
+#f_right span{
+	font-family: 'proxima_nova_rgregular';
+	font-size:18px;
+	color:#000;
+	line-height:1.1;
+	display:block;
+	margin-top:2px;
+}
+
+#footer_phone_button{
+	width:260px;
+	height:40px;	
+}
+
+/*=============================================== CARD =================================================*/
+
+#screen12{height:745px;background-color:#white;}
+#content_id12{height:745px;}
+#menu_card{background-color:black;}
+.card_link{
+	font-family: 'Conv_FuturaNewBook_0';
+	font-size:16px;
+	color:#4c4c4c;
+	text-decoration:none;
+	margin-top:50px;
+	display:block;
+	width:133px;
+	margin-left:10px;
+}
+.card_link:hover{text-decoration:underline;}
+
+#card_box{
+	width:1200px;
+	height:534px;
+	margin-top:30px;
+}
+
+#card_left{
+	width:620px;
+	height:534px;
+	float:left;
+	margin-left:10px;
+}
+
+#card_right{
+	width:540px;
+	height:534px;
+	float:right;
+	margin-right:10px;
+}
+
+.card_title{
+	font-family: 'Conv_GaramondPremrPro';
+	font-size:30px;
+	letter-spacing:4px;line-height:1;
+}
+
+.card_hr{background-color:#e8e8e9;height:1px; border:none;margin:20px 0px;}
+
+.card_podtitle{
+	font-family: 'Conv_FuturaNewLight_ostrokonechnaya_L';
+	font-size:18px;
+	letter-spacing:4px;line-height:1;position:relative;top:-4px;
+}
+
+.card_cat,.card_text{
+	font-size:18px;
+	line-height:1;
+	color:#4c4c4c;
+}
+
+.card_cat{font-family: 'Conv_FuturaNewDemi_0';position:relative;top:4px;}
+.card_text{font-family: 'Conv_FuturaNewBook_0';}
+
+.card_brend{
+	border:1px solid #cccccc;
+	margin-top:5px;
+	margin-bottom:15px;
+}
+
+#cart_button{
+	width:330px;
+	height:50px;
+	margin-top:25px;
+}
+
+#show_card{
+	width:532px;
+	height:532px;
+	border:1px solid #e5e5e5;
+	float:right;
+}
+
+#show_card img{
+	width:532px;
+	height:auto;
+	display:block;
+}
+
+.card_mini img{
+	width:80px;
+	height:auto;
+	display:block;
+}
+
+.card_mini{
+	width:80px;
+	height:80px;
+	cursor:pointer;
+	margin-bottom:5px;
+	position:relative;left:5px;
+}
+
+.selected{
+	border-top:1px solid rgba(229,229,229,1);
+	border-right:1px solid rgba(255,255,255,1);
+	border-left:1px solid rgba(229,229,229,1);
+	border-bottom:1px solid rgba(229,229,229,1);
+}
+
+.no_border{
+	border-top:1px solid rgba(0,0,0,0);
+	border-right:1px solid rgba(0,0,0,0);
+	border-left:1px solid rgba(0,0,0,0);
+	border-bottom:1px solid rgba(0,0,0,0);
+}
+
+/*=============================================== PROMO =================================================*/
+
+#screen13{height:100vh;min-height:768px;background:#000 url(../img/bg7.jpg)no-repeat center top;}
+#content_id13{height:100vh;min-height:768px;}
+#menu_promo{background:none;}
+#video_header_content2{
+	text-align:center;
+	margin-top:240px;
+}
+
+#screen14{height:2000px;background:#fff;position:relative;z-index:9;}
+#content_id14{height:1700px;}
+#smoke{
+	width:100%;
+	min-width:1200px;
+	height:600px;
+	position:absolut;
+	margin-top:-170px;
+	display:inline-block;
+	background:url(../img/promo_bg.png)no-repeat center center;
+	z-index:10;
+}
+#promo_box1{background:url(../img/promo1.jpg)no-repeat left top;position:absolut;margin-top:-120px;}
+#promo_box2{background:url(../img/promo2.jpg)no-repeat right top;}
+#promo_box3{background:url(../img/promo3.jpg)no-repeat left top;}
+#promo_box4{background:url(../img/promo4.jpg)no-repeat right top;}
+#promo_box5{background:url(../img/promo5.jpg)no-repeat left top;}
+
+.promo_box{
+	width:1200px;
+	height:280px;
+	margin-bottom:20px;
+	display:table;
+}
+
+#promo_txt1{width:400px;height:120px;margin-left:710px;margin-top:75px;}
+#promo_txt2{width:390px;height:210px;margin-left:80px;margin-top:35px;}
+#promo_txt3{width:400px;height:140px;margin-left:710px;margin-top:65px;}
+#promo_txt4{width:390px;height:125px;margin-left:80px;margin-top:70px;}
+#promo_txt5{width:400px;height:250px;margin-left:710px;margin-top:25px;}
+
+.promo_title{
+	font-family: 'Conv_GaramondPremrPro';
+	font-size:26px;
+	letter-spacing:2px;
+	line-height:1;
+	display:block;
+	margin-bottom:5px;
+}
+
+.promo_txt{
+	font-family: 'Conv_FuturaNewBook_0';
+	font-size:18px;	
+	display:block;
+	color:#4c4c4c;
+	line-height:1;
+	margin:10px 0px;
+}
+
+.promo_link{
+	color:#e7cb58;
+	cursor:pointer;
+	border-bottom:1px dashed #e7cb58;
+	padding-top:5px;
+}
+.promo_link:hover{color:#c1ae5e;}
+#promo_button{
+	width:440px;
+	height:50px;
+	letter-spacing:2px;
+	margin:0 auto;
+	display:table;
+	margin-top:60px;
+}
+/*
+.block-19 {
+    width: 1060px;
+}
+
+@media screen and (max-height: 1295px) {
+
+.block-19 {
+    width: 990px;
+}
+
+}
+
+@media screen and (max-height: 1250px) {
+
+.block-19 {
+    width: 930px;
+}
+
+}
+
+@media screen and (max-height: 1200px) {
+
+.block-19 {
+    width: 880px;
+}
+
+}
+
+@media screen and (max-height: 1144px) {
+
+.block-19 {
+    width: 800px;
+}
+
+}
+
+@media screen and (max-height: 1072px) {
+
+.block-19 {
+    width: 730px;
+}
+
+}
+
+@media screen and (max-height: 1000px) {
+
+.block-19 {
+    width: 680px;
+}
+
+}
+
+@media screen and (max-height: 1000px) {
+
+.block-19 {
+    width: 680px;
+}
+
+}
+
+@media screen and (max-height: 950px) {
+
+.block-19 {
+    width: 640px;
+}
+
+}
+
+
+@media screen and (max-height: 921px) {
+
+.block-19 {
+    width: 560px;
+}
+
+}
+
+@media screen and (max-height: 860px) {
+
+.block-19 {
+    width: 480px;
+}
+
+}
+
+@media screen and (max-height: 775px) {
+
+.block-19 {
+    width: 430px;
+}
+
+}*/
+
+.block-19 {
+    width: 430px;
+}
+
+@media screen and (max-height: 806px) {
+
+#video_header_content {
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+}
+
+.pod_title {
+    margin-bottom: 10px;
+}
+
+}
+
+@media screen and (max-height: 735px) {
+
+.block-19 {
+    width: 390px;
+}
+
+}
+
+@media screen and (max-height: 711px) {
+
+.title {
+    font-size: 40px;
+    letter-spacing: 10px;
+    line-height: 1;
+    margin-top: 0px;
+}
+
+.yallou_hr {
+    margin: 19px auto;
+}
+
+}
+
+@media screen and (max-height: 630px) {
+
+.title {
+    font-size: 40px;
+
+}
+
+.yallou_hr {
+    margin: 10px auto;
+}
+
+.pod_title {
+    font-size: 17px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

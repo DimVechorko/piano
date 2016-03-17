@@ -1,0 +1,101 @@
+
+
+
+@-webkit-keyframes zoomIn {
+  0%{
+	opacity:1;
+	 -moz-opacity:1;
+	width:364px;
+	height:364px;
+	border:8px solid #817459;
+	margin-top: 226px;
+	margin-left:114px;
+	display:block;
+  }
+ 
+   100%{
+	opacity:0;
+	-moz-opacity:0;	
+	width:596px;
+	height:596px;
+	border:1px solid #817459;
+	margin-top: 116px;
+	margin-left:5px;
+	display:block;	
+  } 
+  
+}
+
+@keyframes zoomIn {
+  0% {
+	opacity:1;
+	 -moz-opacity:1;	
+	width:364px;
+	height:364px;
+	border:8px solid #817459;/**/
+	margin-top: 226px;
+	margin-left:114px;
+	display:block;	
+
+  }
+ 
+   100%{
+	opacity:0;
+	-moz-opacity:0;		
+	width:596px;
+	height:596px;
+	border:1px solid #817459;/*#817459*/
+	margin-top: 116px;
+	margin-left:5px;
+	display:block;	
+  } 
+  
+}
+
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+}
+
+.animated {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+
+
+/*=============================== НЕ МЕНЯТЬ ==================================*/
+
+.pos_absolut{position:absolute;border-radius:50%;}
+
+.volna1{
+	width:364px;
+	height:364px;
+	border:8px solid #817459;/**/
+	margin-top: 226px;
+	margin-left:114px;
+	opacity:0;	
+	display:none;
+}
+
+
+.volna2{
+	width:596px;
+	height:596px;
+	border:1px solid #817459;/*#817459*/
+	margin-top: 116px;
+	margin-left:5px;
+	opacity:0;	
+}
+
+#volni{
+	width:620px;
+	height:620px;
+	margin-top:100px;
+	margin-left:-5px;
+	position:absolute;
+	display:none;
+	background:url(../img/volni.png)no-repeat center center;
+}
