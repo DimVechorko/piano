@@ -4,6 +4,8 @@
 	padding:60px; 
 	background-color: rgba(0,0,0,0.8);
 	min-width:500px;
+    
+    
 	text-align:center;
 	position: fixed;  
 	z-index: 1001;
@@ -15,9 +17,10 @@
 
 .popup_close{
 	position:absolute;
-	right:0px;
+	top:30px;
+	right:30px;
+    
 	cursor:pointer;
-	margin-top:-60px;
 }
 
 .popup_h1{
@@ -31,6 +34,21 @@
 	color:#858585;
 	font-size:18px;	
 	font-family: 'Conv_FuturaNewLight_ostrokonechnaya_L';
+}
+.popup--adv {
+	font-family: 'Conv_FuturaNewBook_0';
+    color: #000;
+    color: rgba(255,255,255, .7);
+    
+	min-width:600px;
+}
+#simple4 {
+    max-width: 1000px;
+    
+    background-image: url(../img/popup/simple4.jpg);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
 }
 
 .modal_form{
@@ -94,3 +112,264 @@
 	font-size:14px;
 }
 .desc2{color:#ebdb9c!important;}
+
+
+
+
+.popup--adv {
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top: 25px;
+    max-width: 704px;
+    
+    background-color: #fff;
+    color: #000;
+    color: rgba(0,0,0, .7);
+    
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.popup--adv .popup_h1{
+    color: #000;
+    
+    font-size: 30px;
+    line-height: 32px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    
+}
+.popup--adv li {
+    margin-top: 5px;
+}
+
+.popup--adv .button_site {
+    margin-top: 37px;
+    padding: 10px 40px;
+    
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+}
+
+.popup--adv2  {
+    width: 100%;
+    max-width: 1190px;
+    text-align: left;
+}
+.popup--adv2 .popup_h2 {
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    
+    margin-bottom: 23px;
+}
+.popup--adv2 p {
+    margin-top: 5px;
+}
+    
+.row:after {
+    content:'';
+    display: table;
+    clear: both;
+}
+.col {
+    float: left;
+    width: 50%;
+}
+img {
+    max-width: 100%;
+}
+
+.popup--adv .col2 {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 40px;
+}
+    /*border*/
+.popup_adv_info ,
+.product_logo img{
+    border: 1px solid ;
+    border-color: #e8e8e9;
+    border-color: rgba(0,0,0, .1);
+}
+/**/
+
+.popup--adv .product_logo {
+    margin: 12px 0;
+}
+
+.popup_adv_info {
+    padding: 15px 0;
+    
+    border-right: none;
+    border-left: none;
+}
+.popup_adv_info a {
+    
+    text-decoration: underline;
+    color: #4bb1ce;
+    color: rgba(75,177,206, .7);
+    
+}
+.popup_adv_info_list {
+    
+	font-family: 'Conv_FuturaNewBook_0';
+}
+.popup_adv_info_list b {
+    
+	font-family: 'Conv_FuturaNewDemi_0';
+}
+
+
+
+
+
+
+
+
+ .switcher {
+  float: left;
+  width: 100%;
+  height: 536px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 56px;
+}
+ .switcher .mini {
+     
+  position: relative;
+  margin-right: -1px;
+  float: left;
+  width: 82px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+ .switcher .mini li {
+  border-right: 1px solid #e5e5e5;
+  width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-right: -1px;
+  padding: 1px;
+  cursor: pointer;
+  font-size: 0;
+  line-height: 0;
+}
+.switcher .mini li {
+    margin-top: 0;
+    border: 1px solid transparent;
+}
+.switcher .mini li.active {
+  border-color: #e5e5e5;
+  border-right-color:  #fff;
+}
+ .switcher .mini li img {
+  width: 100%;
+}
+ .switcher .main {
+  float: left;
+  min-width: 10px;
+     max-width: 538px;
+     
+  width: calc(100% - 82px);
+     
+  height: inherit;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #e5e5e5;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+}
+ .switcher .main img {
+  width: 100%;
+}
+
+
+
+
+.fl_r {
+    float: right;
+}
+
+#simple4 {
+    
+    text-align: center;
+}
+#simple4 .popup_h1
+, #simple4 .popup_h2 {
+    color: #fff;
+    
+}
+#simple4 {
+    color: #fff;
+    color: rgba(255,255,255,.5);
+}
+#simple4 .popup_h1{
+    margin-bottom: 23px;
+}
+
+#simple4 label,
+#simple4 .modal_input,
+#simple4 .modal_input2 {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+
+#simple4 form {text-align: left;}
+#simple4 .btn {text-transform: uppercase;}
+
+
+
+#simple7 {
+    max-width: 1000px;
+    
+    background-image: url(../img/popup/simple7.jpg);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+#simple7  {
+    text-align: center;
+}
+#simple7  .popup_h2{
+    color: #000;
+    margin-bottom: 0;margin-top: 20px;
+}
+#simple7  .text{
+    color: rgba(0,0,0,.5);
+}
+
+
+
+#simple7 .dots_list>li{display: inline-block;}
+
+.dots_list {
+    list-style-type: none;
+    padding-left: 20px;
+}
+.dots_list>li {
+    position: relative;
+    margin-top: 15px;
+}
+.dots_list>li:before {
+    content: '';
+    display: inline-block;
+    vertical-align: 3px;
+    margin-right: 9px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #ebdb9c;
+    //position: absolute;
+    top: 7px;
+    left: -14px;
+}

@@ -1,0 +1,23 @@
+
+html[data-useragent*='MSIE 10.0'] .block-19__svg__path,
+.ie .block-19__svg__path{
+    fill: none;
+    stroke: #AEA793;
+    stroke-width: 1px;
+    transition: 3s ease 0s;
+}
+html[data-useragent*='MSIE 10.0'] .block-19.active .block-19__svg__path,
+.ie .block-19.active .block-19__svg__path{
+    stroke-dashoffset: 0px;
+}
+
+
+
+@media all and (-ms-high-contrast:none)
+ {
+ 
+    .foo { color: green } /* IE10 */
+     
+    *::-ms-backdrop, .block-19.active .block-19__svg__path { stroke-dashoffset: 0px; } /* IE11 */
+    
+ }

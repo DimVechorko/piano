@@ -1,7 +1,34 @@
 var phone_format;
 $(document).ready(function() {
+    
+    var doc = document.documentElement;
+    doc.setAttribute('data-useragent', navigator.userAgent);
+    
 	timer();
+    
+//    popup('simple7');
+    
 	initMap("Алмата пр. Аль-Фараби, 77/8","ул. Байтурсынова 159");
+    
+    
+    
+    
+    
+    //switcher mini
+	$(document).on('click', '.switcher .mini li', function(){
+		var clickedSrc = $(this).find('img').attr('src');
+		//$(this).find('img').attr('src', $(this).closest('.switcher').find('.main img').attr('src'));
+		$(this).closest('.switcher').find('.main img').attr('src', clickedSrc);
+		$(this).addClass('active').siblings().removeClass('active');
+	});
+    
+    
+    
+    $('#brd11').click( function() {popup('simple5'); });
+    $('#products li').click( function() {popup('simple6'); return false;});
+    
+    
+    
 	$("a.fancybox").fancybox();
 	var prefix = $('.prefix').val();
 	var url = prefix+"send.php";
@@ -57,6 +84,20 @@ $(document).ready(function() {
 		});
 		$('head').append('<link rel="stylesheet" href="'+prefix+'css/animation.css" />');
 	}
+    
+    $('.s6_popup1').click(function(e){
+        var $thisLink = $(this);
+        
+        $thisLink.closest('.s6_box').find('.s6_box__popup').fadeToggle();
+        
+    });
+
+	//Вывод  по фильтру
+	/*$('.select_button').click(function(){
+		var id = $(this).attr('id');
+		console.log(id);
+	});*/
+	
 
 	$('.button').click(function() {
 		$('body').find('form:not(this)').children('label').removeClass('red');
@@ -122,6 +163,44 @@ $(document).ready(function() {
 			});
 		});
 	}
+	$('input[name="chack"]').on('change', function() {
+		var array_type = [];
+		var for_whom = $('.sb_black').data('button');
+		var factory = $('#oll_brends .activ').attr('id');
+		$('input[name="chack"]:checkbox:checked').each(function () {
+			array_type.push($(this).val());
+		});
+		if($.isEmptyObject(factory)){
+			factory = '';
+		}
+		console.log(array_type,for_whom,factory);
+		filter(for_whom,array_type,factory);
+		//filter(for_whom,array_type);
+	});
+	$('.select_button').click(function () {
+		var array_type = [];
+		var for_whom = $(this).data('button');
+		var factory = $('#oll_brends .activ').attr('id');
+		$('input[name="chack"]:checkbox:checked').each(function () {
+			array_type.push($(this).val());
+		});
+		//array_type = JSON.stringify(array_type);
+		if($.isEmptyObject(factory)){
+			factory = '';
+		}
+		console.log(array_type,for_whom,factory);
+		filter(for_whom,array_type,factory);
+	});
+	$('.factory').click(function () {
+		var array_type = [];
+		var for_whom = $('.sb_black').data('button');
+		var factory = $(this).attr('id');
+		$('input[name="chack"]:checkbox:checked').each(function () {
+			array_type.push($(this).val());
+		});
+		console.log(array_type,for_whom,factory);
+		filter(for_whom,array_type,factory);
+	});
 });
 
 function timer() {
@@ -271,11 +350,40 @@ function checkForm(form1) {
 	if(checker != true) { return false; }
 }
 
+$('.s3_popup').click(function() {
+    $(this).next('div').addClass('active');
+});
+
+$('.reviews__indoor').click(function() {
+    $(this).parent('.reviews').removeClass('active');
+});
+
+$('.reviews__main__close').click(function() {
+    $(this).closest('.reviews').removeClass('active');
+});
+
 //beginning load
-    $(window).load(function() {
+    //$(window).load(function() {
+    /*$(document).ready(function() {
     	setTimeout(function(){
 			$('.block-19').addClass('active'); 
 		},500);
           
-    });//end .load
+    });//end .load*/
 //end .order-big
+
+//фильтр каталога
+function filter(for_whom,type,factory) {
+	type = JSON.stringify(type);
+	var query = "form=filter&for_whom="+for_whom+"&type="+type+"&factory="+factory;
+	console.log(query);
+	$.ajax({
+		type: "POST",
+		url: "admin/controller/data.php",
+		dataType: "json",
+		data: "form=filter&for_whom="+for_whom+"&type="+type+"&factory="+factory,
+		success: function(data){
+			console.log(data);
+		}
+	});
+}

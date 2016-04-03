@@ -1,4 +1,5 @@
-<?php include "header.php" ?>
+<?php include "header.php"
+?>
 <script type="text/javascript">
 	play_animation();
 </script>
@@ -63,7 +64,7 @@
 				<!-- <div class="menu-false"></div> -->
 				<div class="general-center">
 					<!--beginning block-19-->
-			    	<div class="block-19">
+			    	<div class="block-19 active">
 			            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"  class="block-19__svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 433 399" width="430" height="396" xml:space="preserve">
 			                <g></g>
 			                <g>
@@ -259,10 +260,10 @@
 			</div>
 			<div id="select">
 				<ul>
-					<li><input type="button" class="select_button sb_black" id="sb1" onclick="sb1();" value="Все"/></li>
-					<li><input type="button" class="select_button sb_white" id="sb2" onclick="sb2();" value="Для обучения"/></li>
-					<li><input type="button" class="select_button sb_white" id="sb3" onclick="sb3();" value="Для профессионалов"/></li>
-					<li><input type="button" class="select_button sb_white" id="sb4" onclick="sb4();" value="Для интерьера"/></li>
+					<li><input type="button" class="select_button sb_black" id="sb1" data-button="all" onclick="sb1();" value="Все"/></li>
+					<li><input type="button" class="select_button sb_white" id="sb2" data-button="dlya-obucheniya" onclick="sb2();" value="Для обучения"/></li>
+					<li><input type="button" class="select_button sb_white" id="sb3" data-button="dlya-professionalov" onclick="sb3();" value="Для профессионалов"/></li>
+					<li><input type="button" class="select_button sb_white" id="sb4" data-button="dlya-interera" onclick="sb4();" value="Для интерьера"/></li>
 				</ul>
 			</div>
 			<div id="catalog_box">
@@ -270,57 +271,58 @@
 					<ul>
 						<hr class="catalog_hr"/>					
 						<li>
-							<input type="checkbox" id="antikvar" name="chack"  value="antikvar"/>
+							<input type="checkbox" id="antikvar" name="chack"  value="23"/>
 							<label for="antikvar" class="label1">Антикварные пианино и рояли</label>
 						</li>
 						<hr class="catalog_hr"/>					
 						<li>
-							<input type="checkbox" id="piano118" name="chack"  value="piano118"/>
+							<input type="checkbox" id="piano118" name="chack"  value="24"/>
 							<label for="piano118" class="label1">Пианино (118-125 см)</label>
 						</li>	
 						<hr class="catalog_hr"/>					
 						<li>
-							<input type="checkbox" id="concert125" name="chack"  value="concert125"/>
+							<input type="checkbox" id="concert125" name="chack"  value="25"/>
 							<label for="concert125" class="label1">Концертные пианино (125-134 см)</label>
 						</li>
 						<hr class="catalog_hr"/>					
 						<li>
-							<input type="checkbox" id="kabinet" name="chack"  value="kabinet"/>
+							<input type="checkbox" id="kabinet" name="chack"  value="26"/>
 							<label for="kabinet" class="label1">Кабинетные рояли (148-160 см)</label>
 						</li>
 						<hr class="catalog_hr"/>					
 						<li>
-							<input type="checkbox" id="salon" name="chack"  value="salon"/>
+							<input type="checkbox" id="salon" name="chack"  value="27"/>
 							<label for="salon" class="label1">Cалонные рояли (175-200 см)</label>
 						</li>
 						<hr class="catalog_hr"/>					
 						<li>
-							<input type="checkbox" id="concert210" name="chack"  value="concert210"/>
+							<input type="checkbox" id="concert210" name="chack"  value="28"/>
 							<label for="concert210" class="label1">Концертные рояли (210-308 см)</label>
 						</li>
 						<hr class="catalog_hr"/>					
 						<li>
-							<input type="checkbox" id="designe" name="chack"  value="designe"/>
+							<input type="checkbox" id="designe" name="chack"  value="29"/>
 							<label for="designe" class="label1">Дизайнерские модели</label>
 						</li>
 						<hr class="catalog_hr"/>						
 					</ul>
 					<br>
 					<div id="oll_brends">
-						<div class="left_brend no_activ" id="brd1" onclick="brend1();"><div class="galka none" id="g1"></div></div>
-						<div class="right_brend no_activ" id="brd2" onclick="brend2();"><div class="galka none" id="g2"></div></div>
-						<div class="left_brend no_activ" id="brd3" onclick="brend3();"><div class="galka none" id="g3"></div></div>
-						<div class="right_brend no_activ" id="brd4" onclick="brend4();"><div class="galka none" id="g4"></div></div>
-						<div class="left_brend no_activ" id="brd5" onclick="brend5();"><div class="galka none" id="g5"></div></div>
-						<div class="right_brend no_activ" id="brd6" onclick="brend6();"><div class="galka none" id="g6"></div></div>	
-						<div class="left_brend no_activ" id="brd7" onclick="brend7();"><div class="galka none" id="g7"></div></div>
-						<div class="right_brend no_activ" id="brd8" onclick="brend8();"><div class="galka none" id="g8"></div></div>
-						<div class="left_brend no_activ" id="brd9" onclick="brend9();"><div class="galka none" id="g9"></div></div>
-						<div class="right_brend no_activ" id="brd10" onclick="brend10();"><div class="galka none" id="g10"></div></div>					
-						<div class="left_brend no_activ" id="brd11" onclick="brend11();"><div class="galka none" id="g11"></div></div>
+						<div class="left_brend no_activ factory" id="brd1" onclick="brend1();"><div class="galka none" id="g1"></div></div>
+						<div class="right_brend no_activ factory" id="brd2" onclick="brend2();"><div class="galka none" id="g2"></div></div>
+						<div class="left_brend no_activ factory" id="brd3" onclick="brend3();"><div class="galka none" id="g3"></div></div>
+						<div class="right_brend no_activ factory" id="brd4" onclick="brend4();"><div class="galka none" id="g4"></div></div>
+						<div class="left_brend no_activ factory" id="brd5" onclick="brend5();"><div class="galka none" id="g5"></div></div>
+						<div class="right_brend no_activ factory" id="brd6" onclick="brend6();"><div class="galka none" id="g6"></div></div>
+						<div class="left_brend no_activ factory" id="brd7" onclick="brend7();"><div class="galka none" id="g7"></div></div>
+						<div class="right_brend no_activ factory" id="brd8" onclick="brend8();"><div class="galka none" id="g8"></div></div>
+						<div class="left_brend no_activ factory" id="brd9" onclick="brend9();"><div class="galka none" id="g9"></div></div>
+						<div class="right_brend no_activ factory" id="brd10" onclick="brend10();"><div class="galka none" id="g10"></div></div>
+						<div class="left_brend no_activ factory" id="brd11" onclick="brend11();"><div class="galka none" id="g11"></div></div>
 					</div>
 					<a href="">
-						<div id="akciya">
+						<div id="akciya" 
+						 onclick="popup('simple4'); return false;">
 							<img src="img/akciya.png" class="akcionniy"/>
 							<div id="akciya_center">
 								<span>АКЦИЯ</span>
@@ -437,13 +439,13 @@
 				<span class="popup_h2">При покупке специалисты настраивают ваш инструмент, <br>а затем в течение года обслуживание осуществляется бесплатно </span><br><br>
 				<form name="request" action="http://<?echo$_SERVER['SERVER_NAME'];?>/" method="POST">
 					<? echo $desc_name ?>
-					<label class="name required">
+					<label class="name ">
 						<input type="text" name="name" class="modal_input"/>
 					</label><br>			
 					<? echo $desc_phone ?>
 					<label class="phone required"><input type="text" name="phone" class="modal_input"/></label>
 					<? echo $desc_email ?>
-					<label class="email required"><input type="text" name="email" class="modal_input"/></label>					
+					<label class="email "><input type="text" name="email" class="modal_input"/></label>					
 					<div data-name="request" class="button_site2 button submit noselect btn" onClick="formname('ОФОРМИТЬ ГОДОВОЕ ОБСЛУЖИВАНИЕ');">ОФОРМИТЬ ГОДОВОЕ ОБСЛУЖИВАНИЕ</div>
 				</form>	
 			</div>
@@ -461,17 +463,74 @@
 				<div id="s3_text1">
 					<span class="s3_head">БЕЗЗВУЧНАЯ ИГРА</span><br>
 					<span class="s3_body">Система QuietTime ProRecord даёт возможность играть <br>на инструменте «беззвучно», слушая себя через наушники. <br>При этом вы можете использовать рояль или фортепиано <br>в обычном режиме, мгновенно переключив механизм</span>
-					<input type="button" class="s3_popup" value="Подробнее" onclick="popup('request');"/>
+					<input type="button" class="s3_popup" value="Подробнее"/>
+					<div class="reviews">
+                            <div class="reviews__indoor"></div>
+                            <div class="reviews__main">
+                                <img src="img/close2.png" class="reviews__main__close">
+                                <div class="reviews__main__wrapper">
+                                    <img src="img/pop1.jpg">
+                                    <p class="reviews__main__wrapper__title">Беззвучное звучание</p>
+                                    <p class="reviews__main__wrapper__info">Этот уникальный механизм оснащён стоп-планкой – молоточки пианино/рояля останавливаются прежде, чем они соприкоснутьсясо струнами. Она монтируется таким образом, чтобы вы имели возможность использовать музыкальный инструмент в обычном режиме. Также система оснащена сенсорной панелью управления — 88 клавишных сенсора измеряют силу и частоту движения каждой отдельной клавиши, и преобразуют их в MIDI-файлы</p>
+                                    <div class="button_site2 submit  noselect btn" onclick="popup('callback');">узнать подробнее</div>
+                                </div>
+                            </div>
+                        </div>
 				</div><br><br>
 				<div id="s3_text2">
 					<span class="s3_head">БЕРЕЖНАЯ ЗАЩИТА</span><br>
 					<span class="s3_body">Система климат-контроля сокращает колебания <br>влажности воздуха около чувствительных элементов<br>инструмента: деки, механики, клавиатуры</span>
-					<input type="button" class="s3_popup" value="Подробнее" onclick="popup('request');"/>				
+					<input type="button" class="s3_popup" value="Подробнее"/>	
+					<div class="reviews">
+                        <div class="reviews__indoor"></div>
+                        <div class="reviews__main">
+                            <img src="img/close2.png" class="reviews__main__close">
+                            <div class="reviews__main__wrapper">
+                                <img src="img/pop2.jpg">
+                                <p class="reviews__main__wrapper__title">Бережная защита</p>
+                                <p class="reviews__main__wrapper__info">Эта система является необходимым условием для сохранения долговечности материала и насыщенности звука. Установив эту систему на своё пианино/рояль, вы получите:</p>
+                                
+                                <div class="gallery2">
+                                    <ul class="dots_list">
+                                        <li>поддержание нужного для инструмента микроклимата</li>
+                                        <li>сохранение и стабильность настроек</li>
+                                        <li>предотвращение коррозии струн</li>
+                                    </ul>
+                                    <ul class="dots_list">
+                                        <li>исключение разбухания и рассыхания механических элементов инструмента</li>
+                                        <li>защиту от износу сукна</li>
+                                    </ul>
+                                </div>
+                                
+<!--
+                               	<ul class="reviews__main__wrapper__list">
+							      <li>- сохранение и стабильность настроек</li>
+                               	  <li>- предотвращение коррозии струн </li>
+                               	  <li>- исключение разбухания и рассыхания механических элементов инструмента</li>
+                               	  <li>- защиту от износу сукна</li>
+                               	</ul>
+-->
+                               	<div  class="button_site2 submit  noselect btn" onclick="popup('callback');">узнать подробнее</div>
+                            </div>
+                        </div>
+                    </div>			
 				</div><br>
 				<div id="s3_text3">
 					<span class="s3_head">НЕВИДИМЫЙ ПИАНИСТ</span><br>
 					<span class="s3_body">Устройство PianoDisc встраивается в любую модель<br>рояля или пианино и позволяет воспроизводить более<br>5 000 музыкальных произведений с помощью<br>самодвижущихся клавиш без участия музыканта </span>
-					<input type="button" class="s3_popup" value="Подробнее" onclick="popup('request');"/>				
+					<input type="button" class="s3_popup" value="Подробнее"/>	
+					<div class="reviews">
+                        <div class="reviews__indoor"></div>
+                        <div class="reviews__main">
+                            <img src="img/close2.png" class="reviews__main__close">
+                            <div class="reviews__main__wrapper">
+                                <img src="img/PianoDisk_v1.gif">
+                                <p class="reviews__main__wrapper__title">Невидимый пианист</p>
+                                <p class="reviews__main__wrapper__info">Устройство PianoDisc встраивается в любую модель рояля или пианино и позволяет воспроизводить более 5 000 музыкальных произведений с помощью самодвижущихся клавиш без участия музыканта </p>
+                            	<div  class="button_site2 submit  noselect btn" onclick="popup('callback');">Подробнее о PianoDisc</div>
+                            </div>
+                        </div>
+                    </div>			
 				</div>
 			</div>
 		</div>
@@ -501,18 +560,24 @@
 		<div class="content" id="content_id5">
 			<div id="s5_left">
 				<div id="s5_title"><span class="title black">ВСТРЕЧА<br>В САЛОНЕ PIANOS</span></div>
-				<div id="s5_video" onclick="popup('video_popup');"><img src="img/play.png" id="play" alt="play" title="play"/></div>
+				<div id="s5_video" xonclick="popup('video_popup');">
+<!--				    <img src="img/play.png" id="play" alt="play" title="play"/>-->
+                    <video poster="img/s5_video.jpg" controls width="560" height="314">
+                        <source src="video/Pianos_Interview.mp4" type="video/mp4" ></source>
+                        <source src="video/Pianos_Interview.webm" type="video/webm" ></source>
+                    </video>
+                </div>
 			</div>
 			<div id="s5_right">
 				<span class="s2_title2 black" id="s5_title">ПОСЕТИТЕ НАШ САЛОН</span><br>
 				<span class="popup_h2" id="s5_podtitle">где вы сможете ознакомиться с инструментами,<br>имеющимся в наличии, а также получить<br>профессиональную личную консультацию<br>по подбору фортепиано</span>
 				<form name="request" action="http://<?echo$_SERVER['SERVER_NAME'];?>/" method="POST">
 
-					<label class="desc2 name required">Имя<input type="text" name="name" class="modal_input2"/></label>		
+					<label class="desc2 name ">Имя<input type="text" name="name" class="modal_input2"/></label>		
 
 					<label class="desc2 phone required">Телефон<input type="text" name="phone" class="modal_input2"/></label>
 
-					<label class="desc2 email required">E-mail<input type="text" name="email" class="modal_input2"/></label>	
+					<label class="desc2 email ">E-mail<input type="text" name="email" class="modal_input2"/></label>	
 					<div data-name="request" class="button_site2 submit button noselect btn" onClick="formname('ЗАПИСАТЬСЯ НА ВСТРЕЧУ В САЛОНЕ');">ЗАПИСАТЬСЯ НА ВСТРЕЧУ В САЛОНЕ</div>
 				</form>				
 			</div>
@@ -533,15 +598,33 @@
 				</div>
 				<div class="s6_box" id="s6b2">
 					<span class="s6_text">Посетите наш шоу-рум <br>или сразу оплатите счёт</span><br><br>
-					<span class="s6_popup" onclick="popup('request');">Подробнее о способах оплаты</span>
+					<span class="s6_popup" 
+					    onclick="popup('request');">Подробнее о способах оплаты</span>
+					<div class="s6_box__popup posa">
+					    Оплата инструмента
+                        <ul>
+                            <li>кредитной картой</li>
+                            <li>наличными</li>
+                            <li>перечислением на счет поставщика</li>
+                        </ul>
+					</div>
 				</div>
 				<div class="s6_box" id="s6b3">
 					<span class="s6_text">Ожидайте доставку<br>и установку инструмента</span><br><br>
-					<span class="s6_popup" onclick="popup('request');">Подробнее об условиях доставки</span>
+					<span class="s6_popup" 
+					    onclick="popup('request');">Подробнее об условиях доставки</span>
+					
+					<div class="s6_box__popup posa">
+                        Доставка в течении 3-х дней после оплаты по г. Алматы
+					</div>
 				</div>
 				<div class="s6_box" id="s6b4">
 					<span class="s6_text">Настройка и сопровождение<br>нашими специалистами</span><br><br>
-					<span class="s6_popup" onclick="popup('request');">Узнать больше о годовом сервисном <br>обслуживании</span>
+					<span class="s6_popup" 
+					    onclick="popup('request');">Узнать больше</span>
+					
+					<div class="s6_box__popup posa">Настройка Инструмента в течении 7 дней после доставки. <br> Годовое сервисное обслуживание.
+					</div>
 				</div>
 			</div>
 		</div>
@@ -582,12 +665,18 @@
 				<div id="arrow_right" onclick="slide_right();"></div>
 				<div id="slider_box">
 					<div id="slider_content">
-						<img src="img/slide1.jpg" class="slide" alt="image" title="image"/>
-						<img src="img/slide2.jpg" class="slide" alt="image" title="image"/>
-						<img src="img/slide3.jpg" class="slide" alt="image" title="image"/>
-						<img src="img/slide4.jpg" class="slide" alt="image" title="image"/>
-						<img src="img/slide5.jpg" class="slide" alt="image" title="image"/>
-						<img src="img/slide6.jpg" class="slide" alt="image" title="image"/>
+						<a href="img/slide1.jpg" class="slider__enlarge fancybox">
+						    <img src="img/slide1.jpg" class="slide" alt="image" title="image"/></a>
+						<a href="img/slide2.jpg" class="slider__enlarge fancybox">
+						    <img src="img/slide2.jpg" class="slide" alt="image" title="image"/></a>
+						<a href="img/slide3.jpg" class="slider__enlarge fancybox">
+						    <img src="img/slide3.jpg" class="slide" alt="image" title="image"/></a>
+						<a href="img/slide4.jpg" class="slider__enlarge fancybox">
+						    <img src="img/slide4.jpg" class="slide" alt="image" title="image"/></a>
+						<a href="img/slide5.jpg" class="slider__enlarge fancybox">
+						    <img src="img/slide5.jpg" class="slide" alt="image" title="image"/></a>
+						<a href="img/slide6.jpg" class="slider__enlarge fancybox">
+						    <img src="img/slide6.jpg" class="slide" alt="image" title="image"/></a>
 					</div>
 				</div>
 			</div>
@@ -607,7 +696,7 @@
 					<div class="s9_text">
 						<span class="s9_title">Haileybury Almaty</span><br>
 						<span class="s9_txt" id="txt9_1">Настоящим письмом выражаем благодарность<br>коллективу компании за индивидуальный<br>подбор при выборе инструмента , а также<br>соблюдение сроков поставки рояля<br>и проведение работ по сборке и настройке...</span>
-						<input type="button" class="s3_popup" value="Подробнее" onclick="popup('request');"/>
+						<a type="button" class="s3_popup fancybox" value="Подробнее"  href="img/thanks/1.jpg"/>Подробнее</a>
 					</div>
 				</div>
 				<div class="s9_right">
@@ -615,7 +704,7 @@
 					<div class="s9_text">
 						<span class="s9_title">Индерская детская школа искусств</span><br>
 						<span class="s9_txt" id="txt9_2">Компания зарекомендовала себя надёжным<br>поставщиком, ориентированным на клиентов<br>и на оказание им услуг высокого качества...</span>									
-						<input type="button" class="s3_popup" value="Подробнее" onclick="popup('request');"/>
+						<a type="button" class="s3_popup fancybox" value="Подробнее"  href="img/thanks/2.jpg"/>Подробнее</a>
 					</div>
 				</div>
 			</div>	
@@ -625,7 +714,7 @@
 					<div class="s9_text">
 						<span class="s9_title">Специализированная музыкальная<br>школа-интернат</span><br>
 						<span class="s9_txt" id="txt9_3">Мы выражаем большую<br>благодарность менеджерам по продажам<br>за профессиональную, квалифицированную<br>работу...</span>							
-						<input type="button" class="s3_popup" value="Подробнее" onclick="popup('request');"/>
+						<a type="button" class="s3_popup fancybox" value="Подробнее"  href="img/thanks/3.jpg"/>Подробнее</a>
 					</div>
 				</div>
 				<div class="s9_right">
@@ -633,7 +722,7 @@
 					<div class="s9_text">
 						<span class="s9_title">Школа искусств г. Балхаш</span><br>
 						<span class="s9_txt" id="txt9_4">Следует отметить своевременность<br>выполнения заказа, внимательное отношение <br>к пожеланиям клиента и качество <br>доставки товара...</span>					
-						<input type="button" class="s3_popup" value="Подробнее" onclick="popup('request');"/>
+						<a type="button" class="s3_popup fancybox" value="Подробнее"  href="img/thanks/4.jpg"/>Подробнее</a>
 					</div>
 				</div>
 			</div>

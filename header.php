@@ -9,6 +9,7 @@
 	<link rel="shortcut icon" href="<? echo $prefix; ?>img/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="<? echo $prefix; ?>img/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="css/main.css"/>
+	<link rel="stylesheet" type="text/css" href="css/all-ie-only.css" />
 	<link rel="stylesheet" href="css/fonts.css"/>
 	<link rel="stylesheet" href="css/modals.css"/>
 	<link rel="stylesheet" href="css/animation.css"/>
@@ -19,7 +20,7 @@
 	<script src="js/main.js"></script>	
 	<script src="js/animation.js"></script>	
 	<script type="text/javascript" src="<? echo $prefix; ?>js/scripts.js"></script>
-	<script type="text/javascript" src="<? echo $prefix; ?>js/script.js"></script>	
+<!--	<script type="text/javascript" src="<? echo $prefix; ?>js/script.js"></script>	-->
 </head>
 <body id="body">
 <?php include "php/popup.php" ?>
