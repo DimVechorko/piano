@@ -21,4 +21,3 @@
 		$desc_email = '';
 		$desc_ques = '';
 	}
-?>
